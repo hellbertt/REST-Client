@@ -6,6 +6,7 @@ target 'REST Client' do
   use_frameworks!
 
   # Pods for REST Client
+  pod 'SwiftLint'
 
   target 'REST ClientTests' do
     inherit! :search_paths
