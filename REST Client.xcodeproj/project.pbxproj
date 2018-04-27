@@ -112,15 +112,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AFBE51C6209370A100948545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFBE51C7209370A600948545 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFF42CEB2090EAB700980AD2 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFBE51C8209370AB00948545 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AFBE51C9209370B000948545 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFF42CE92090EAB700980AD2 /* AppDelegate.swift */,
+				AFF42CF02090EAB800980AD2 /* Assets.xcassets */,
+				AFF42CF52090EAB800980AD2 /* Info.plist */,
+				AFF42CF22090EAB800980AD2 /* LaunchScreen.storyboard */,
+				AFF42CED2090EAB700980AD2 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AFF42CDD2090EAB700980AD2 = {
 			isa = PBXGroup;
 			children = (
+				52252A10DD4D9947DA78B992 /* Frameworks */,
+				A96F6264EFFDE457EF723562 /* Pods */,
+				AFF42CE72090EAB700980AD2 /* Products */,
 				AFF42CE82090EAB700980AD2 /* REST Client */,
 				AFF42CFD2090EAB800980AD2 /* REST ClientTests */,
 				AFF42D082090EAB800980AD2 /* REST ClientUITests */,
-				AFF42CE72090EAB700980AD2 /* Products */,
-				A96F6264EFFDE457EF723562 /* Pods */,
-				52252A10DD4D9947DA78B992 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,12 +171,10 @@
 		AFF42CE82090EAB700980AD2 /* REST Client */ = {
 			isa = PBXGroup;
 			children = (
-				AFF42CE92090EAB700980AD2 /* AppDelegate.swift */,
-				AFF42CEB2090EAB700980AD2 /* ViewController.swift */,
-				AFF42CED2090EAB700980AD2 /* Main.storyboard */,
-				AFF42CF02090EAB800980AD2 /* Assets.xcassets */,
-				AFF42CF22090EAB800980AD2 /* LaunchScreen.storyboard */,
-				AFF42CF52090EAB800980AD2 /* Info.plist */,
+				AFBE51C6209370A100948545 /* Model */,
+				AFBE51C7209370A600948545 /* View */,
+				AFBE51C8209370AB00948545 /* ViewModel */,
+				AFBE51C9209370B000948545 /* Supporting Files */,
 			);
 			path = "REST Client";
 			sourceTree = "<group>";
@@ -150,8 +182,8 @@
 		AFF42CFD2090EAB800980AD2 /* REST ClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				AFF42CFE2090EAB800980AD2 /* REST_ClientTests.swift */,
 				AFF42D002090EAB800980AD2 /* Info.plist */,
+				AFF42CFE2090EAB800980AD2 /* REST_ClientTests.swift */,
 			);
 			path = "REST ClientTests";
 			sourceTree = "<group>";
@@ -159,8 +191,8 @@
 		AFF42D082090EAB800980AD2 /* REST ClientUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AFF42D092090EAB800980AD2 /* REST_ClientUITests.swift */,
 				AFF42D0B2090EAB800980AD2 /* Info.plist */,
+				AFF42D092090EAB800980AD2 /* REST_ClientUITests.swift */,
 			);
 			path = "REST ClientUITests";
 			sourceTree = "<group>";
@@ -413,6 +445,7 @@
 				AFF42CEE2090EAB700980AD2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		AFF42CF22090EAB800980AD2 /* LaunchScreen.storyboard */ = {
@@ -421,6 +454,7 @@
 				AFF42CF32090EAB800980AD2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -546,7 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "REST Client/Info.plist";
+				INFOPLIST_FILE = "REST Client/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,7 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "REST Client/Info.plist";
+				INFOPLIST_FILE = "REST Client/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
